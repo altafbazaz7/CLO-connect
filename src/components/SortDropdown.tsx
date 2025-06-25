@@ -11,14 +11,7 @@ const SortDropdown: React.FC = () => {
     dispatch(setSortBy(e.target.value as 'name' | 'priceHigh' | 'priceLow'));
   };
 
-  const getSortLabel = (value: string) => {
-    switch (value) {
-      case 'name': return 'Relevance';
-      case 'priceHigh': return 'Higher Price';
-      case 'priceLow': return 'Lower Price';
-      default: return 'Relevance';
-    }
-  };
+  
 
   return (
     <div className="sort-container">
